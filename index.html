@@ -18,19 +18,11 @@
       background: url('assets/swgvanguardback.png') center/cover no-repeat;
       display: flex;
       flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      text-align: center;
-    }
-    header h1 {
-      font-size: 3rem;
-      color: #ffe81f;
-      text-shadow: 0 0 10px #ffe81f;
+      justify-content: flex-start;
+      align-items: flex-end;
+      padding: 2rem;
     }
     nav {
-      position: absolute;
-      top: 20px;
-      right: 30px;
       display: flex;
       gap: 1.5rem;
     }
@@ -38,6 +30,7 @@
       color: #f0f0f0;
       text-decoration: none;
       font-weight: bold;
+      font-size: 1rem;
     }
     nav a:hover {
       color: #ffe81f;
@@ -119,20 +112,15 @@
       font-size: 0.9rem;
     }
     @media (max-width: 600px) {
-      header h1 {
-        font-size: 2rem;
-      }
       nav {
         flex-direction: column;
-        top: 10px;
-        right: 10px;
+        align-items: flex-start;
       }
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>SWG Vanguard</h1>
     <nav>
       <a href="#about">About</a>
       <a href="#features">Features</a>
