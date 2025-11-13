@@ -22,11 +22,6 @@
       justify-content: center;
       text-align: center;
     }
-    header img.logo {
-      max-width: 300px;
-      margin-bottom: 1rem;
-      filter: drop-shadow(0 0 10px #ffe81f);
-    }
     header h1 {
       font-size: 3rem;
       color: #ffe81f;
@@ -91,7 +86,7 @@
       border-radius: 8px;
       margin-top: 2rem;
     }
-    .cta a {
+    .cta a.download {
       background: #ffe81f;
       color: #000;
       padding: 1rem 2rem;
@@ -106,6 +101,12 @@
       justify-content: center;
       align-items: center;
       gap: 0.5rem;
+      margin-top: 0.5rem;
+    }
+    .discord-link svg {
+      flex-shrink: 0;
+    }
+    .discord-link a {
       color: #ffe81f;
       font-weight: bold;
       text-decoration: underline;
@@ -131,7 +132,6 @@
 </head>
 <body>
   <header>
-    <img src="assets/SWGVanguardLogo.png" alt="SWG Vanguard Logo" class="logo">
     <h1>SWG Vanguard</h1>
     <nav>
       <a href="#about">About</a>
@@ -165,7 +165,7 @@
   <section id="join" class="cta">
     <h2>Ready to Join the Vanguard?</h2>
     <p>Download the launcher, connect to our galaxy, and begin your journey.</p>
-    <a href="#">Download & Play</a>
+    <a href="#" class="download">Download & Play</a>
     <div class="discord-link">
       <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="#ffe81f" viewBox="0 0 24 24">
         <path d="M20.317 4.369a19.791 19.791 0 0 0-4.885-1.515..."/>
